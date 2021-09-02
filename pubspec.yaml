@@ -17,6 +17,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_native_splash: ^1.2.1
+
+flutter_native_splash:
+  background_image: "assets/images/splash_image.png"
+  android: true
+  ios: true
+  android_gravity: center
+  ios_content_mode: center
+  fullscreen: true
 
 flutter:
   uses-material-design: true
