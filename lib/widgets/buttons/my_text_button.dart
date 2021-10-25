@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../app_styles.dart';
-import '../size_configs.dart';
+import '../../app_styles.dart';
+import '../../size_configs.dart';
 
 class MyTextButton extends StatelessWidget {
   const MyTextButton({
@@ -18,7 +18,7 @@ class MyTextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(
-        horizontal: 20,
+        vertical: 10,
       ),
       child: SizedBox(
         height: SizeConfig.blockSizeH! * 15.5,
@@ -31,6 +31,9 @@ class MyTextButton extends StatelessWidget {
           ),
           style: TextButton.styleFrom(
             backgroundColor: bgColor,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
           ),
         ),
       ),

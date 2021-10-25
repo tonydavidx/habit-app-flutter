@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:habit_app/app_styles.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import './views/pages.dart';
 
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
           Theme.of(context).textTheme,
         ),
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: kScaffoldBackground,
       ),
       home: seenOnboard == true ? SignUpPage() : OnBoardingPage(),
     );

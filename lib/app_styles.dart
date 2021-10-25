@@ -33,3 +33,13 @@ final kBodyText3 = TextStyle(
     color: kSecondaryColor,
     fontSize: SizeConfig.blockSizeH! * 3.8,
     fontWeight: FontWeight.normal);
+
+final kInputBorder = OutlineInputBorder(
+  borderRadius: BorderRadius.circular(12),
+  borderSide: BorderSide.none,
+);
+
+final kInputHintStyle = kBodyText2.copyWith(
+  fontWeight: FontWeight.normal,
+  color: kSecondaryColor.withOpacity(0.5),
+);
