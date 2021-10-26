@@ -40,7 +40,7 @@ class _MyPasswordFieldState extends State<MyPasswordField> {
           enabledBorder: kInputBorder,
           hintText: 'Password',
           hintStyle: kInputHintStyle,
-          contentPadding: EdgeInsets.all(0),
+          // contentPadding: EdgeInsets.all(0),
           suffix: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 14),
             child: GestureDetector(
@@ -64,7 +64,7 @@ class _MyPasswordFieldState extends State<MyPasswordField> {
           prefixIcon: Padding(
             padding: const EdgeInsets.only(right: 16),
             child: Container(
-              height: 60,
+              // height: 60,
               decoration: BoxDecoration(
                 border: Border(
                   right: BorderSide(

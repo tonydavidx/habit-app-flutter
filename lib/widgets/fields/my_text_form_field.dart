@@ -41,11 +41,13 @@ class MyTextFormField extends StatelessWidget {
           enabledBorder: kInputBorder,
           hintText: hint,
           hintStyle: kInputHintStyle,
-          contentPadding: EdgeInsets.all(0),
+          // contentPadding: EdgeInsets.all(0),
+          // since we removed container remove content padding 0 to enable default padding for the field
           prefixIcon: Padding(
             padding: const EdgeInsets.only(right: 16),
             child: Container(
-              height: 60,
+              // height: 60,
+              // this container height is causing the error
               decoration: BoxDecoration(
                 border: Border(
                   right: BorderSide(
