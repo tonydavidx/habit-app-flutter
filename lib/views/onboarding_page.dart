@@ -118,50 +118,55 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           ),
           Expanded(
             flex: 1,
-            child: Column(
-              children: [
-                currentPage == onboardingContents.length - 1
-                    ? MyTextButton(
-                        buttonName: 'Get Started',
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => SignUpPage(),
-                              ));
-                        },
-                        bgColor: kPrimaryColor,
-                      )
-                    : Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          OnBoardNavBtn(
-                            name: 'Skip',
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: Column(
+                children: [
+                  currentPage == onboardingContents.length - 1
+                      ? Expanded(
+                          child: MyTextButton(
+                            buttonName: 'Get Started',
                             onPressed: () {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => SignUpPage()));
+                                    builder: (context) => SignUpPage(),
+                                  ));
                             },
+                            bgColor: kPrimaryColor,
                           ),
-                          Row(
-                            children: List.generate(
-                              onboardingContents.length,
-                              (index) => dotIndicator(index),
+                        )
+                      : Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            OnBoardNavBtn(
+                              name: 'Skip',
+                              onPressed: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => SignUpPage()));
+                              },
                             ),
-                          ),
-                          OnBoardNavBtn(
-                            name: 'Next',
-                            onPressed: () {
-                              _pageController.nextPage(
-                                duration: Duration(milliseconds: 400),
-                                curve: Curves.easeInOut,
-                              );
-                            },
-                          )
-                        ],
-                      ),
-              ],
+                            Row(
+                              children: List.generate(
+                                onboardingContents.length,
+                                (index) => dotIndicator(index),
+                              ),
+                            ),
+                            OnBoardNavBtn(
+                              name: 'Next',
+                              onPressed: () {
+                                _pageController.nextPage(
+                                  duration: Duration(milliseconds: 400),
+                                  curve: Curves.easeInOut,
+                                );
+                              },
+                            )
+                          ],
+                        ),
+                ],
+              ),
             ),
           )
         ],

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:habit_app/app_styles.dart';
-import 'package:habit_app/size_configs.dart';
-import 'package:habit_app/validators.dart';
+import '../../app_styles.dart';
+import '../../size_configs.dart';
+import '../../validators.dart';
+import '../pages.dart';
 import '../../widgets/widgets.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -150,22 +151,9 @@ class _SignUpPageState extends State<SignUpPage> {
                       'Already have an account? ',
                       style: kBodyText3,
                     ),
-                    Material(
-                      color: Colors.transparent,
-                      child: InkWell(
-                        onTap: () {},
-                        splashColor: kSecondaryColor.withOpacity(0.2),
-                        borderRadius: BorderRadius.circular(12),
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Text(
-                            'Sign in',
-                            style: kBodyText3.copyWith(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                        ),
-                      ),
+                    SmallTextButton(
+                      buttonText: 'Sign in',
+                      page: LoginPage(),
                     )
                   ],
                 ),
