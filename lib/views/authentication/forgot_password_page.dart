@@ -46,7 +46,9 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                 Icons.arrow_back,
                 color: kSecondaryColor,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pop(context);
+              },
             ),
           ),
         ),

@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                                         children: [
                                           MyTextFormField(
                                             hint: 'Email',
-                                            icon: Icons.email,
+                                            icon: Icons.email_outlined,
                                             fillColor: kScaffoldBackground,
                                             inputType:
                                                 TextInputType.emailAddress,
