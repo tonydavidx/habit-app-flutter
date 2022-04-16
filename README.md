@@ -8,3 +8,5 @@ Flutter habit app ui implementation. found this ui kit on [PixelTrue](https://ww
 | <img src="./screenshots/ss_o1.png" width="400">  | <img src="./screenshots/ss_o2.png" width="400">  |
 | <img src="./screenshots/ss_o3.png" width="400">  | <img src="./screenshots/sign_up_page.png" width="400">  |
 | <img src="./screenshots/login_page.png" width="400">  | <img src="./screenshots/forgot_password.png" width="400">  |
+
+Project featured in [FlutterHub](https://www.flutterhub.site/templates/habit-app-ui/)
